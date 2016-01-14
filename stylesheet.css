@@ -1,0 +1,181 @@
+h1 {
+  font-size: 1em;
+}
+hr {
+  border-top: 1px solid #BBB;
+}
+
+/* Header */
+header {
+  border-bottom: 2px solid #333;
+  height: 1.5em;
+  padding: 2px;
+  margin-bottom: 1em;
+  background-color: #666;
+}
+.header-bar {
+  margin-bottom: 2em;
+}
+
+/* Body */
+
+body {
+
+}
+
+/* Menu Area */
+
+#menu {
+  list-style: none;
+  display: flex;
+}
+
+
+/* Main Area */
+
+.main-area {
+  color: #bbb;
+}
+.main-menu {
+  text-align: center;
+}
+.item {
+  margin: 10px;
+  float: left;
+  padding: 0 10px 5px 10px;
+  border: 1px solid #333;
+  box-shadow: 1px 1px 3px #111;
+  height: 2.5em;
+  width: 7em;
+  text-align: center;
+}
+.item a {
+  color: #111199;
+}
+
+
+.costInformation {
+  display: flex;
+  height: 1em;
+}
+.costItem {
+  margin-top: 13px;
+}
+
+/* Materials */
+
+.materials {
+  float: right;
+  height: 53.6em;
+  width: 12em;
+  padding-left: 1em;
+  padding-top: 1em;
+  margin-top: -10px;
+  border-left: 1px solid #666;
+  color: #FFF;
+  background-color: #000;
+}
+
+/* Materials */
+.fullArea {
+  display: inline-flex;
+}
+.popup-mine {
+  display: none;
+  position: relative;
+  height: 7em;
+  width: 16em;
+  right: -45em;
+  background-color: #FFF;
+  border: 1px solid #333;
+  text-align: left;
+}
+
+.specificInfo{
+  display: none;
+  position: absolute;
+  height: 21em;
+  width: 21em;
+  right: 38.7em;
+  top: 41px;
+  background-color: #999;
+  border: 1px solid #333;
+  border-radius:5px;
+  text-align: left;
+  color: #000;
+  box-shadow: 0 0 3px #333;
+  padding: 10px;
+}
+
+.specificInfo p {
+  font-size: 0.9em;
+}
+
+.specificInfo img {
+  height: auto;
+  width: 15.9em;
+  margin: 0 auto;
+  display: block;
+}
+
+.itemInformation:hover .specificInfo {
+  display: block;
+}
+
+.galaxyMap {
+  background-image: url("Canonmap.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 999999;
+  height: 51em;
+  width: 43em;
+  float: left;
+}
+.planetList {
+  float: right;
+  width: 32em;
+  margin-right: -33em;
+  text-align: left;
+}
+.planetList ul {
+  list-style: none;
+  display: inline-flex;
+}
+.planetList li {
+  margin-right:10px;
+}
+
+.planetInfo {
+  height: 10em;
+  width: 31em;
+  border: 1px solid #666;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #333;
+  display: block;
+  position: absolute;
+  top: 47em;
+  right: 14em;
+  padding: 1em;
+}
+
+.planetInfo img {
+  height: auto;
+  width: 11em;
+  float: right;
+  margin-top: -9.7em;
+}
+
+/* Fate Area */
+
+#hoverShow {
+  display: none;
+  border: 1px solid #666;
+}
+#sideChoice li:hover #hoverShow{
+  display: block;
+}
+
+#mineralCT {
+  /*float: right;*/
+}
