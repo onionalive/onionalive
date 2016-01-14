@@ -270,3 +270,6 @@ function setGM(newGold, newMinerals) {
   gold = newGold;
   mineral = newMinerals;
 }
+function showGalaxyTab() {
+  document.getElementById('galaxyArea').style.display = 'block';
+}
