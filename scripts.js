@@ -271,5 +271,5 @@ function setGM(newGold, newMinerals) {
   mineral = newMinerals;
 }
 function showGalaxyTab() {
-  document.getElementById('galaxyArea').style.display = 'block';
+  document.getElementById('galaxyMenu').style.display = 'block';
 }
