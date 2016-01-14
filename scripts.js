@@ -224,7 +224,7 @@ function getPlanetInfo(planet) {
 }
 
 function settlePlanet(planet) {
-  if (planet = "Kaut" && credits >= kautSettleCost) {
+  if (planet == "Kaut" && credits >= kautSettleCost) {
     kautSettle = true;
   }
 }
