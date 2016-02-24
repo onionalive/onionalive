@@ -26,3 +26,10 @@ nav {
 .profile-image {
   border-radius: 341em;
 }
+
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
