@@ -19,7 +19,7 @@ nav {
   margin-bottom: 5em;
 }
 
-.experience-table>td>img {
+.experience-table>tr>td>img {
   max-width: 25%;
 }
 
