@@ -7,7 +7,7 @@ nav {
   background-color: #343838;
   color: #FFFFFF;
 }
-.nav>li>a {
+.navbar, .nav>li>a {
   color: #FFFFFF !important;
 }
 
