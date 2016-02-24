@@ -6,7 +6,9 @@ nav {
   border-bottom: 1px solid #333;
   background-color: #343838;
   color: #FFFFFF;
-  font-family: 'Open Sans';
+}
+.nav>li>a {
+  color: #FFFFFF;
 }
 
 .home-section {
