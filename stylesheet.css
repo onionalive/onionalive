@@ -9,14 +9,14 @@ nav {
 }
 .navbar, .nav>li>a {
   color: #FFFFFF !important;
-  text-shadow: none;
+  text-shadow: none !important;
 }
 
 .home-section {
   background-color: #008c9e;
   color: #FFFFFF;
   border-bottom: 2px solid #333;
-  margin-bottom: 2.5em;
+  margin-bottom: 5em;
 }
 
 .profile-image {
