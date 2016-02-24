@@ -19,6 +19,10 @@ nav {
   margin-bottom: 5em;
 }
 
+.experience-table>td>img {
+  max-width: 25%;
+}
+
 .profile-image {
   border-radius: 341em;
 }
