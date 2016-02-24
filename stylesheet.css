@@ -20,7 +20,7 @@ nav {
 }
 
 .experience-table>tr>td>img {
-  max-width: 25%;
+  max-width: 25% !important;
 }
 
 .profile-image {
