@@ -2,6 +2,27 @@
   font-family: Raleway;
 }
 
+.footer {
+  background-color: #441447;
+  border-bottom: 25px solid #143148;
+}
+.navbar {
+  background-color: #143148;
+}
+.text-white {
+  color: white;
+}
+.margin-top {
+  margin-top: 200px;
+}
+address {
+  font-size: large;
+}
+.fa {
+  padding: 5px;
+}
+
+
 nav {
   border-bottom: 1px solid #333;
   background-color: #343838;
