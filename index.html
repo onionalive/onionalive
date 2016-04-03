@@ -56,9 +56,14 @@
           </div>
           <div class="row">
             <h3 class="text-center"><u>Skills</u></h3>
-            <span><i class="fa fa-css3 fa-5x"></i></span>
-          <span><i class="fa fa-html5 fa-5x"></i></span>
-          <span><i class="fa fa-js fa-5x"></i></span>
+            <section id="skills">
+					<progress value="80" max="100"></progress><span>JavaScript/jQuery</span>
+					<progress value="70" max="100"></progress><span><i class="fa fa-css3 fa-5x"></i></span>
+					<progress value="60" max="100"></progress><span><i class="fa fa-html5 fa-5x"></i></span>
+					<progress value="70" max="100"></progress><span>Java/PHP</span>
+					<progress value="60" max="100"></progress><span>MySQL</span>
+					<progress value="80" max="100"></progress><span>Photoshop</span>
+					</section>
           </div>
         </div>
 
@@ -91,6 +96,14 @@
       </div>
     </div>
   </footer>
+    <script type="text/javascript">
+        $(function() {
+      $('progress').each(function() {
+        var max = $(this).val();
+        $(this).val(0).animate({ value: max }, { duration: 2000, easing: 'easeOutCirc' });
+    			});
+    });
+    </script>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="bootstrap.min.js"></script>
   </body>
