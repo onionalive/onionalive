@@ -64,9 +64,11 @@ nav {
   margin: 0 auto;
 }
 
-
+/*
+Styles for progress bars
+*/
 #skills span {
-    top: -30px;
+    top: -37px;
     left: 2%;
     position: relative;
     font-size: 1.4em;
