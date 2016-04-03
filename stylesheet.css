@@ -23,7 +23,7 @@ address {
 }
 
 .text-white {
-  color: white;
+  color: white !important;
 }
 .bottom-half {
   background: #666;
