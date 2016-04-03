@@ -25,6 +25,9 @@ address {
 .text-white {
   color: white;
 }
+.bottom-half {
+  background: #666;
+}
 
 nav {
   border-bottom: 1px solid #333;
