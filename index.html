@@ -56,14 +56,16 @@
             <div class="row">
             <div class=" col-xs-12 col-sm-6 col-md-8">
               <h3 class="text-center"><u>Skills</u></h3>
-              <section id="skills">
-      					<progress value="80" max="100"></progress><span>JavaScript/jQuery</span>
-      					<progress value="70" max="100"></progress><span><i class="fa fa-css3 fa-1x"></i></span>
-      					<progress value="60" max="100"></progress><span><i class="fa fa-html5 fa-1x"></i></span>
-      					<progress value="70" max="100"></progress><span>Java/PHP</span>
-      					<progress value="60" max="100"></progress><span>MySQL</span>
-      					<progress value="80" max="100"></progress><span>Photoshop</span>
-    					</section>
+              <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em;">
+                0%
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 2%;">
+                2%
+              </div>
+            </div>
             </div>
           </div>
         </div>
@@ -97,14 +99,7 @@
       </div>
     </div>
   </footer>
-    <script type="text/javascript">
-        $(function() {
-      $('progress').each(function() {
-        var max = $(this).val();
-        $(this).val(0).animate({ value: max }, { duration: 2000, easing: 'easeOutCirc' });
-    			});
-    });
-    </script>
+
     <!--
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="bootstrap.min.js"></script>
