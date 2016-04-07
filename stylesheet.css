@@ -73,6 +73,9 @@ nav {
 .margin-center {
   margin: 0 auto;
 }
+main-img {
+  height: 12em;
+}
 
 /*
 Styles for progress bars
