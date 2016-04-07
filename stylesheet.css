@@ -76,6 +76,19 @@ nav {
 .main-img {
   height: 12em;
 }
+@media screen and (max-width: 991px) {
+  .jumbrotron {
+    margin-top:-70px;
+  }
+}
+@media screen and (max-width: 644px) {
+  .jumbrotron {
+    margin-top:-50px;
+  }
+}
+.jumbrotron {
+  margin-top:-85px;
+}
 
 /*
 Styles for progress bars
