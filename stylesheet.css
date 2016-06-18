@@ -121,3 +121,8 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar {
     background-color: #329ad1;
 }
+
+.around-links {
+  color: #FFF;
+}
+
