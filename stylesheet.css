@@ -93,7 +93,7 @@ nav {
 .around-links i {
   color: #FFF;
 }
-.around-links:hover {
+.around-links i:hover {
   color: #0060B3;
 }
 
@@ -102,6 +102,4 @@ nav {
 }
 .portfolio-link:hover {
   color: #0060B3;
-}
-}
 }
