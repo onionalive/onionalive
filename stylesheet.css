@@ -76,6 +76,11 @@ nav {
 .main-img {
   height: 12em;
 }
+@media screen and (max-width: 700px) {
+  .main-img {
+    margin-bottom:4em;
+  }
+}
 @media screen and (max-width: 991px) {
   .j-container {
     margin-top:-70px;
