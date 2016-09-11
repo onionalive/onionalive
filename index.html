@@ -18,8 +18,10 @@
 		<div class="inner">
 			<a href="#" class="image avatar"><img src="images/stephen.jpg" alt="" /></a>
 			<h1><strong>Stephen R. </strong>Learning Webdev</h1>
-			<h4>Santa Cruz, CA to Sydney, AUS/h4>
-			<h5>Director of  platform design and development @ <br /><a href="http://www.ocgsolutions.com/">OCG Solutions</a></h5>
+			<h4>Santa Cruz, CA to Sydney, AUS</h4>
+			<h5>Director of platform design and development @ <br /><a href="http://www.ocgsolutions.com/">OCG Solutions</a></h5>
+			<br/>
+			<div class="listening-to"></div>
 		</div>
 	</header>
 
@@ -31,11 +33,14 @@
 			<header class="major">
 				<h2>Hi, I'm Stephen.</h2>
 			</header>
-			<p>I was born in San Jose, CA. Eventually moved to and lived in the Santa Cruz, CA area until recently. I now live in Sydney, Australia</p>
+			<p>I was born in San Jose, CA. Eventually moved to and lived in the Santa Cruz, CA area until recently. I now live in Sydney,
+				Australia</p>
 			<ul>Here's a lil about me:
-			<li>I do web work. I'm still learning, but proud of what I know so far. Been working doing web development for the past 4+ years.</li>
-			<li>I sometimes do music stuff, you can listen here:  <a href="https://soundcloud.com/halfright-1" >SoundCloud</a>, <a href="https://miasmadoom.bandcamp.com/album/omens" >Miasma</a>, or <a href="https://dakhmaoakland.bandcamp.com/releases" >Dakhma</a></li>
-			<li>My girlfriend Leah is the coolest, and has awesome art and other things you can check out <a href="http://lxxhjxxn.com/">HERE</a></li>
+				<li>I do web work. I'm still learning, but proud of what I know so far. Been working doing web development for the past 4+
+					years.</li>
+				<li>I sometimes do music stuff, you can listen here: <a href="https://soundcloud.com/halfright-1">SoundCloud</a>, <a href="https://miasmadoom.bandcamp.com/album/omens">Miasma</a>,
+					or <a href="https://dakhmaoakland.bandcamp.com/releases">Dakhma</a></li>
+				<li>My girlfriend Leah is the coolest, and has awesome art and other things you can check out <a href="http://lxxhjxxn.com/">HERE</a></li>
 			</ul>
 			<!--
 			<ul class="actions">
@@ -119,6 +124,7 @@
 	<script src="assets/js/main.js"></script>
 
 	<script type="text/javascript">
+	$(document).ready(function() {
 			var userFeed = new Instafeed({
 				get: 'user',
 				limit: 20,
@@ -129,7 +135,26 @@
 				template: '<li class="instagram-photo"><a class="ig-photo-link" href="{{link}}"><img class="ig-photo" src="{{image}}" /><p class="ig-caption">{{caption}}</p></a></li>'
 			});
 			userFeed.run();
+			});
 		</script>
+
+	<script>
+		$(document).ready(function() {
+		$.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=s101391&api_key=b2da2d6c867fffcccbce1f31f8211cca&limit=5&format=json&callback=?", function(data) {
+
+        var html = '<h5>Last.fm recent listens:</h5>'; // we declare the variable that we'll be using to store our information
+        var counter = 1; // we declare a counter variable to use with the if statement in order to limit the result to 1
+        $.each(data.recenttracks.track, function(i, item) {
+            if(counter <= 5) {
+                html += '<span><a href="' + item.url + '" target="_blank">' + item.name + '</a> - ' + item.artist['#text'] + '</span><br />';
+            } // close the if statement
+            counter++;
+        }); 
+        $('.listening-to').append(html); 
+    }); // close JSON call
+
+}); // close document ready function
+</script>
 
 </body>
 
