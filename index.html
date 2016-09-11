@@ -140,7 +140,7 @@
 
 	<script>
 		$(document).ready(function() {
-		$.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=s101391&api_key=b2da2d6c867fffcccbce1f31f8211cca&limit=5&format=json&callback=?", function(data) {
+		$.getJSON("https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=s101391&api_key=b2da2d6c867fffcccbce1f31f8211cca&limit=5&format=json&callback=?", function(data) {
 
         var html = '<h5>Last.fm recent listens:</h5>'; // we declare the variable that we'll be using to store our information
         var counter = 1; // we declare a counter variable to use with the if statement in order to limit the result to 1
