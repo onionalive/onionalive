@@ -20,6 +20,7 @@
 			<h1><strong>Stephen R. </strong>Web Developer</h1>
 			<h4>Santa Cruz, CA to Sydney, AU</h4>
 			<h5>Director of platform design and development @ <br /><a href="http://www.ocgsolutions.com/">OCG Solutions</a></h5>
+			<h5>Web Developer @ <br /><a href="https://www.presentcompany.co/">Present Company</a></h5>
 			<br/>
 			<div class="listening-to"></div>
 		</div>
@@ -37,56 +38,21 @@
 				Australia</p>
 			<ul>Here's a lil about me:
 				<li>I do web work. I'm still learning, but proud of what I know so far.</li>
-				<li>I sometimes do music stuff, you can listen here: <a href="https://soundcloud.com/halfright-1">SoundCloud</a>, <a href="https://miasmadoom.bandcamp.com/album/omens">Miasma</a>,
-					or <a href="https://dakhmaoakland.bandcamp.com/releases">Dakhma.</a></li>
+				<li>Currently learning React Native and getting more familiar with data structures</li>
+				<li>I sometimes do music stuff, you can listen here: <a href="https://miasmadoom.bandcamp.com/album/omens">Miasma</a>,
+					or <a href="https://daxma.bandcamp.com/releases">Daxma.</a></li>
 				<li>My girlfriend Leah is the coolest, and has awesome art and other things you can check out <a href="http://lxxhjxxn.com/">HERE.</a></li>
 			</ul>
-			<!--
-			<ul class="actions">
-				<li><a href="#" class="button">Learn More</a></li>
-			</ul>
-			-->
 		</section>
 
-		<!-- Two 
+		<!-- Two -->
 		<section id="two">
-			<h2>Recent Work</h2>
-			<div class="row">
-				<article class="6u 12u$(xsmall) work-item">
-					<a href="images/fulls/elysaandleah.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-					<h3>Elysa & Leah Art Collective website</h3>
-					<p>Containing selected work's from Elysa Gaona and Leah Jean</p>
-				</article>
-				<article class="6u$ 12u$(xsmall) work-item">
-					<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-					<h3>Ultricies lacinia interdum</h3>
-					<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-				</article>
-				<article class="6u 12u$(xsmall) work-item">
-					<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-					<h3>Tortor metus commodo</h3>
-					<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-				</article>
-				<article class="6u$ 12u$(xsmall) work-item">
-					<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-					<h3>Quam neque phasellus</h3>
-					<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-				</article>
-				<article class="6u 12u$(xsmall) work-item">
-					<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-					<h3>Nunc enim commodo aliquet</h3>
-					<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-				</article>
-				<article class="6u$ 12u$(xsmall) work-item">
-					<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-					<h3>Risus ornare lacinia</h3>
-					<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-				</article>
-			</div>
-			<ul class="actions">
-				<li><a href="#" class="button">Full Portfolio</a></li>
+			<h3>Things I have dug recently</h3>
+			<ul>
+				<li><a href="https://github.com/getify/You-Dont-Know-JS">You don't know JS</a> Informative book series about javascript, hosted on github.</li>
+				<li><a href="https://gist.github.com/staltz/868e7e9bc2a7b8c1f754">Introduction to Reactive Programming</a></li>
 			</ul>
-		</section>-->
+		</section>
 
 		<!-- Three -->
 		<section id="three">
@@ -103,11 +69,10 @@
 				<li><a href="https://twitter.com/onionalive" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 				<li><a href="https://github.com/onionalive" class="icon fa-github"><span class="label">Github</span></a></li>
 				<li><a href="http://codepen.io/onionalive/" class="icon fa-codepen"><span class="label">Email</span></a></li>
-				<!--<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>-->
-				<li><a href="mailto:stephenritchie0@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				<li><a href="mailto:stephen@presentcompany.co" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 			</ul>
 			<ul class="copyright">
-				<li>&copy; Stephen R. + Strata</li>
+				<li>&copy; Stephen R.</li>
 			</ul>
 		</div>
 	</footer>
@@ -141,18 +106,18 @@
 		$(document).ready(function() {
 		$.getJSON("https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=s101391&api_key=b2da2d6c867fffcccbce1f31f8211cca&limit=5&format=json&callback=?", function(data) {
 
-        var html = '<h5>Last.fm recent listens:</h5>'; // we declare the variable that we'll be using to store our information
-        var counter = 1; // we declare a counter variable to use with the if statement in order to limit the result to 1
+        var html = '<h5>Last.fm recent listens:</h5>';
+        var counter = 1;
         $.each(data.recenttracks.track, function(i, item) {
             if(counter <= 5) {
                 html += '<span><a href="' + item.url + '" target="_blank">' + item.name + '</a> - ' + item.artist['#text'] + '</span><br />';
-            } // close the if statement
+            }
             counter++;
-        }); 
-        $('.listening-to').append(html); 
-    }); // close JSON call
+        });
+        $('.listening-to').append(html);
+    });
 
-}); // close document ready function
+});
 </script>
 
 </body>
