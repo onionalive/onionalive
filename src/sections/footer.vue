@@ -1,5 +1,5 @@
 <template>
-  <div class="footer -wrap">
+  <div class="footer">
     <div class="footer__section footer__left">
       <a class="footer__main-link" href="#"><h2>Stephen R.</h2></a>
     </div>

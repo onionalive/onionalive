@@ -1,5 +1,5 @@
 <template>
-  <div class="header -wrap">
+  <div class="header">
     <div class="header__section header__left">
       <img class="person-image" alt="Stephen" src="../../Media/stephen.jpg">
       <h2>Stephen R.</h2>
@@ -9,8 +9,6 @@
       <ul class="header__nav">
         <li><a  href="#about">About</a></li>
         <li><a  href="#clients">Clients</a></li>
-        <li><a target="_blank" href="https://github.com/onionalive">Github</a></li>
-        <li><a target="_blank" href="https://www.last.fm/user/s101391">LastFM</a></li>
       </ul>
     </div>
   </div>
